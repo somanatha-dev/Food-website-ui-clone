@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.main .page-1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.main .page-1 .design {
+  width: 80%;
+  height: 70%;
+  background-color: #f4e1d1;
+  border-radius: 45% 55% 38% 62%/0% 0% 100% 100%;
+  position: relative;
+  z-index: 1;
+}
+.main .header {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  position: absolute;
+  /* change from relative */
+  top: 0;
+  /* stick to top */
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.main .header img {
+  height: 6rem;
+  cursor: pointer;
+}
+.main .header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 80%;
+  justify-content: space-between;
+}
+.main .header .navbar .navlinks {
+  display: flex;
+  gap: 1rem;
+  width: 30%;
+  gap: 5rem;
+  justify-content: flex-end;
+}
+.main .header .navbar .navlinks a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.main .header .navbar .navlinks a:hover {
+  color: #306c1e;
+}
+.main .header .navbar .social {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+.main .header .navbar .social i {
+  font-size: 1.5rem;
+  transition: transform 0.1s ease-in-out 0.1s;
+}
+.main .header .navbar .social i:hover {
+  transform: scale(1.1);
+  color: #306c1e;
+}
+.main .header .navbar i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.main .container {
+  position: absolute;
+  top: 35%;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin: 0 5% 0 0;
+  z-index: 10;
+  display: flex;
+}
+.main .container .intro {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+.main .container .intro .money {
+  color: rgb(255, 157, 0);
+}
+.main .container .intro h1 {
+  font-size: 3rem;
+}
+.main .container .intro p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.main .container .intro button {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 30px;
+  border-color: rgb(255, 157, 0);
+  padding: 1rem;
+  background-color: rgb(255, 157, 0);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.main .container .food-menu {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 75%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .container .food-menu #main-food {
+  transition: opacity 0.5s ease;
+}
+.main .container .food-menu img {
+  height: 25rem;
+  width: 25rem;
+}
+.main .container .food-menu .buttons {
+  position: relative;
+  top: -2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+}
+.main .container .food-menu .buttons button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: white;
+  border-color: white;
+  box-shadow: 2px 5px 15px rgb(134, 133, 133);
+  cursor: pointer;
+}
+.main .container .food-menu .buttons button i {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
